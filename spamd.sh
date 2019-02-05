@@ -1,7 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-spamd --username debian-spamd \
-      --nouser-config \
+spamd --nouser-config \
       --syslog stderr \
       --pidfile /var/run/spamd.pid \
       --helper-home-dir /var/lib/spamassassin \

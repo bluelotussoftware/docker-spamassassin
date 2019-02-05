@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -m
 
 /rule-update.sh &
