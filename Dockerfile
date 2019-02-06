@@ -32,11 +32,7 @@ RUN mkdir -p /etc/spamassassin/sa-update-keys && \
 
 # RUN sed -i 's/^logfile = .*$/logfile = \/dev\/stderr/g' /etc/razor/razor-agent.conf
 
-COPY spamd.sh /
-
-COPY rule-update.sh /
-
-COPY run.sh /
+COPY spamd.sh rule-update.sh run.sh /
 
 RUN chown root:root /spamd.sh && \
     chown root:root /rule-update.sh && \
